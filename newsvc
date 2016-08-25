@@ -1,1 +1,2 @@
+#A PAM Configuration file for a new pam service "newsvc"
 auth sufficient pam_log_response.so
