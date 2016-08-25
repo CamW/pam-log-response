@@ -6,6 +6,8 @@ OBJ=pam_log_response.o
 LIBS=-lpam
 DESTDIR=/lib/*/security
 TARGET=pam_log_response.so
+CFGDIR=/etc/pam.d
+CFGFILE=newsvc
 
 %.o: %.c
 	@$(CC) -c $^ $(CFLAGS)
@@ -22,9 +24,11 @@ clean:
 .PHONY: install
 
 install:
-	@install -m 0644 $(TARGET) $(DESTDIR)	
+	@install -m 0644 $(TARGET) $(DESTDIR)
+	@install -m 0644 $(CFGFILE) $(CFGDIR)
 
 .PHONY: uninstall
 
 uninstall:
-	@-rm $(DESTDIR)/$(TARGET)	
+	@-rm $(DESTDIR)/$(TARGET)
+	@-rm $(CFGDIR)/$(CFGFILE)
