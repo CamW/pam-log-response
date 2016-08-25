@@ -18,7 +18,7 @@ To uninstall the module:
 sudo make uninstall
 ```
 
-Once installed, install pamtester `sudo apt-get install pamtester` and the run `pamtester newsvc <yourUsername> authenticate`.
+Once installed, install pamtester `sudo apt-get install pamtester` and then run `pamtester newsvc <yourUsername> authenticate`.
 
 Finally, check the logfile at `/var/log/auth.log` and notice that a line as below was written to the log.
 ```
