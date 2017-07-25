@@ -1,13 +1,13 @@
 # pam-log-response
 Diagnostic PAM module which logs responses to the PAM conversation messages.
 
-##WARNING
+## WARNING
 This module is intended for debugging and should never be used on a system which you care about. It logs PAM conversation responses (passwords) amoung other things to the system log files.
 
-##Compatibility
+## Compatibility
 This module was built on and has only ever been used on Ubuntu(16.04) but could easily be modified to run on other unix based systems which support PAM. All instructions below assume Ubuntu 16.04.
 
-##Usage
+## Usage
 To build and install the module, run the following:
 ```
 make
